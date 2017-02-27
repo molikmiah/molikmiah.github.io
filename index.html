@@ -7,18 +7,41 @@
     
     <style>
         body {
-            background-color: #262a2d;
-            color: #ffffff;
+          background: #000000;
+          font-size: 80%;
+          padding: 20px;
         }
-        #page-wrap {
-             width: 800px;
-             margin: 0 auto;
+
+        main {
+          position: relative;
+          background: white;
+          height: 200px;
+          width: 60%;
+          margin: 0 auto;
+          padding: 20px;
+          resize: both;
+          overflow: auto;
+        }
+
+        main div {
+          background: black;
+          color: white;
+          width: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          padding: 20px;
+          resize: both;
+          overflow: auto;
         }
     </style>
     
     <body>
-        <div id="page-wrap">
-            <h1>Molik Miah</h1>
-        </div>
+        <main>
+            <div>
+                Molik Miah
+            </div>
+        </main>
     </body>
 </html>
