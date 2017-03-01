@@ -1,9 +1,9 @@
-body {
+/*body {
     background: #000000;
     color: white;
     padding: 0;
     margin: 0;
-}
+}*/
 
 .header {
     height: 20px;
@@ -40,4 +40,24 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@import url("//fonts.googleapis.com/css?family=Inconsolata:700");
+
+body {
+  background-color: #111;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+p {
+  font-family: Inconsolata, Source Code Pro, Consolas, monospace;
+  margin-left: calc(50vw - 6em);
+  font-size: 24px;
+  font-weight: bold;
 }
