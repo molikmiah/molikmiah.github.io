@@ -4,24 +4,24 @@
         <meta charset="utf-8">
         <title>Molik Miah, Front-end / Web Developer. Leeds, UK.</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
 
     <body>
-        <!--
-        <div class="header">
-            Molik Miah
-        </div>
+        <p class="centered-text title">Molik Miah</p>
+        <p id="render">...</p>
 
-        <div class="coming-soon parent">
-            <div class="child">Coming Soon</div>
-        </div>
+        <p class="centered-text myphoto-container">
+            <img class="myphoto" src="https://media.licdn.com/media/AAEAAQAAAAAAAAjrAAAAJDdiZDQ3ZDE5LWFhMjAtNDlmMC04NGY1LTk1MDQ2Mzk0YWYyOQ.jpg">
+        </p>
 
         <div class="header bottom">
             &nbsp;
         </div>
-        -->
     </body>
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="text/javscript" src="https://github.com/molikmiah/molikmiah.github.io/blob/master/js/introfx.js"></script>
+    <script>
+        function getRandomColor(){return colors[Math.floor(Math.random()*colors.length)]}function getRandomChar(){return String.fromCharCode(94*Math.random()+33)}function getRandomColoredString(a){for(var b=document.createDocumentFragment(),c=0;c<a;c++){var d=document.createElement("span");d.textContent=getRandomChar(),d.style.color=getRandomColor(),b.appendChild(d)}return b}function render(){var a=skills[$.skillI];$.step?$.step--:($.step=step,$.prefixP<prefix.length?($.prefixP>=0&&($.text+=prefix[$.prefixP]),$.prefixP++):"forward"===$.direction?$.skillP<a.length?($.text+=a[$.skillP],$.skillP++):$.delay?$.delay--:($.direction="backward",$.delay=delay):$.skillP>0?($.text=$.text.slice(0,-1),$.skillP--):($.skillI=($.skillI+1)%skills.length,$.direction="forward")),p.textContent=$.text,p.appendChild(getRandomColoredString($.prefixP<prefix.length?Math.min(tail,tail+$.prefixP):Math.min(tail,a.length-$.skillP))),setTimeout(render,timeout)}var prefix="",skills=["Front-end Developer","Web Application Developer","Experienced JavaScript Developer","Enterprise-grade Angular Applications Developer","HTML & CSS","TypeSript","PHP & MySQL","Lover of all things web!"].map(function(a){return a+"."}),delay=2,step=1,tail=10,timeout=75,p=document.getElementById("render"),colors=["rgb(110,64,170)","rgb(150,61,179)","rgb(191,60,175)","rgb(228,65,157)","rgb(254,75,131)","rgb(255,94,99)","rgb(255,120,71)","rgb(251,150,51)","rgb(226,183,47)","rgb(198,214,60)","rgb(175,240,91)","rgb(127,246,88)","rgb(82,246,103)","rgb(48,239,130)","rgb(29,223,163)","rgb(26,199,194)","rgb(35,171,216)","rgb(54,140,225)","rgb(76,110,219)","rgb(96,84,200)"],$={text:"",prefixP:-tail,skillI:0,skillP:0,direction:"forward",delay:delay,step:step};setTimeout(render,500);
+    </script>
 </html>

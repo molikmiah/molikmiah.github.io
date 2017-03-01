@@ -1,63 +1,44 @@
-/*body {
+@import url("//fonts.googleapis.com/css?family=Inconsolata:700");
+body {
     background: #000000;
     color: white;
     padding: 0;
     margin: 0;
-}*/
-
-.header {
-    height: 20px;
-    background: #44ade4;
-    color: black;
-    padding-top: 5px;
-    padding-right: 10px;
-    font-family: monospace;
-    font-weight: 800;
-    text-align: right;
-    font-size: 1rem;
-}
-
-.coming-soon {
-    text-align: center;
-    /*padding-top: 6rem;*/
-    font-size: 6rem;
-    background: #000000;
-    height: calc(100vh - 30px);
+    height: 100vh;
+    width: 100vw;
 }
 
 .bottom {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2px;
+    height: 5px;
+    background: #270b1c;
 }
 
-.parent {
-  position: relative;
+.centered-text {
+    text-align: center;
 }
-.child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.title {
+    font-size: 4rem;
 }
 
-@import url("//fonts.googleapis.com/css?family=Inconsolata:700");
-
-body {
-  background-color: #111;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-}
 p {
   font-family: Inconsolata, Source Code Pro, Consolas, monospace;
-  margin-left: calc(50vw - 6em);
   font-size: 24px;
   font-weight: bold;
+}
+#render {
+    width: 100%;
+    text-align: center;
+}
+.myphoto-container {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.myphoto {
+    border-radius: 50%;
+    padding-top: 70px;
+    width: 15%;
 }
